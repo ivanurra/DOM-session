@@ -61,3 +61,25 @@ button.onclick = function() {
     };
   });
   
+
+// setTimeout()
+
+const timeoutId = setTimeout(() => {
+  console.log('Hey there!');
+}, 1000);
+
+
+//setInterval()
+
+let i = 10;
+const intervalId = setInterval(function () {
+  if (i > 0) {
+    console.log(i);
+  } else {
+    console.log('Pop!');
+    clearInterval(intervalId);
+  }
+
+  i--;
+}, 1000);
+
